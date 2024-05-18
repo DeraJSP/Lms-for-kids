@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
+import confetti from "../../assets/confetti.png";
 import "../sign_up/Congrat.css";
-// import cheers from "../components/image/Festive flags and hands with decorations.png";
 
 function Congrat() {
   return (
@@ -15,14 +15,12 @@ function Congrat() {
               Your account has been created Successfully
             </span>
           </h3>
-          <img src="" className="cheers-image" />
-
-          <button
-            className="BackBtn-2"
-            onClick={() => <Navigate to="/Login" replace={true} />}
-          >
-            Continue
-          </button>
+          <img src={confetti} />
+          <Link to="/ChildsName">
+            <button className="w-[600px] h-[78px] text-[32px] bg-[#FFD012] text-[#04031C] font-bold py-4 px-4 mb-2 rounded-xl">
+              Continue
+            </button>
+          </Link>
         </div>
       </div>
     </div>
