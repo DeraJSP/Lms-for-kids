@@ -1,6 +1,5 @@
 .congrat-body {
   background: #ffd166;
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -44,10 +43,6 @@
 .hiparent-sub-1 h4 {
   font-size: 22px;
   margin-top: 70px;
-}
-
-congrat-body img {
-  width: 37px;
 }
 
 .BackBtn-2 {
